@@ -52,7 +52,9 @@ class ProjectManager extends Instructor{
     standUp(slackChannel) {
         return `${this.name} announces to ${slackChannel}, @channel standy times!`;
     }
-    //debugsCode()
+    debugsCode(student, subject){
+        return `${this.name} debugs ${student}'s code on ${subject}.`;
+    }
 }
 
 const amya = new Instructor({
@@ -121,3 +123,4 @@ console.log(des.listsSubjects());
 console.log(des.PRAssignment("Computer Science"));
 console.log(zac.sprintChallenge("Preprocessing II"));
 console.log(kurt.standUp("Web24"))
+console.log(leslie.debugsCode("Zac", 'CSS'));
