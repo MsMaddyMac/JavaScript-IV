@@ -33,7 +33,7 @@ class Student extends Person{
         this.favSubjects = studentAttrs.favSubjects;
     }
     listsSubjects() {
-        console.log(des.favSubjects);
+        return `${this.favSubjects}`;
     }
     PRAssignment(subject) {
         return `${this.name} has submitted a PR for ${subject}.`;
@@ -124,3 +124,4 @@ console.log(des.PRAssignment("Computer Science"));
 console.log(zac.sprintChallenge("Preprocessing II"));
 console.log(kurt.standUp("Web24"))
 console.log(leslie.debugsCode("Zac", 'CSS'));
+console.log(benny.speak());
